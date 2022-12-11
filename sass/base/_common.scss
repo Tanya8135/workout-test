@@ -1,0 +1,33 @@
+.container {
+    // margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        width: 480px;
+    }
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include desktop {
+        width: 1140px;
+    }
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.sectoin {
+    padding: 50px 0 50px 0;
+    background-color: rgb(243, 190, 202);
+}

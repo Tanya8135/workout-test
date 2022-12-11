@@ -1,0 +1,51 @@
+.list {
+  display: flex;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.item {
+  @include tablet {
+    font-size: 38px;
+  }
+
+  @include desktop {
+    font-size: 42px;
+  }
+
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #111;
+  font-size: 32px;
+
+  &:nth-child(3n) {
+    background-color: #f44336;
+  }
+
+  &:nth-child(2n) {
+    background-color: #3f51b5;
+  }
+
+  &:nth-child(-n + 1) {
+    background-color: #4caf50;
+  }
+
+  &:nth-child(5n) {
+    background-color: #000cd4;
+  }
+
+  &:nth-child(7n) {
+    background-color: #e91e63;
+  }
+}
+
+// $colors: "#f44336", "#3f51b5", "#4caf50", "#000cd4", "#e91e63", "#009688";
+
+// @include colorize($colors, ".item");
