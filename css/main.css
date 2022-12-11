@@ -105,4 +105,20 @@ img {
 }
 .item:nth-child(7n) {
   background-color: #e91e63;
+}
+
+.title {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.3;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=main.css.map */
